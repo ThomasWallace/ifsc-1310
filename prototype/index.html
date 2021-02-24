@@ -1,57 +1,163 @@
 <!doctype html>
 <html lang="en">
+<!-- HTML Comment -->
+
 <head>
-  <meta charset="utf-8">
-  <title>IFSC 1310 | Thomas Wallace |Gordo the Space monkey</title>
-  <meta name="description" content="Keyword Rich Description" />
+  <title>HTML5 Prototype Example</title>
+  <meta charset="utf-8" />
+  <!--Declares Characterset -->
+  <meta name="description" content="This is a short keyword-rich narrative of the site's purpose" />
   <meta name="author" content="Thomas Wallace" />
+  <meta name="keywords" content="UALR, UA Little Rock, Information Science, IFSC, Web Technologies" />
 </head>
 
 <body>
-  <h1>Gordo</h1>
+  <div class="container">
+    <header class="primary">
+      <h1>Prototype HTML Document Example</h1>
+    </header>
+    <!--#header-->
+    <section id="content">
+      <!--(Document Title)-->
+      <h2 id="anchordemo">Properly Marking up an HTML Document</h2>
+      <!--(Primary Content Heading)-->
 
-<h2>Old Reliable</h2>
+      <p>This is a paragraph. Often times designers will use <q>Dummy Text</q> as a placeholder in a document. <strong>An example of that text follows</strong>...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. </p>
 
-Gordo was one of the first monkeys to make it into space as part of NASA's space program. Eight monkeys had flown on NASA missions before him, five of whom went by the name of Albert.
+      <table border="1">
+        <caption>Grocery List</caption>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Cost</th>
+        </tr>
+        <tr>
+          <td>Jolt</td>
+          <td>12</td>
+          <td>.99</td>
+        </tr>
+        <tr>
+          <td>Ramen</td>
+          <td>12</td>
+          <td>.33</td>
+        </tr>
+        <tr>
+          <td>Milk</td>
+          <td>1</td>
+          <td>3.99</td>
+        </tr>
+        <tr>
+          <td>Jolt</td>
+          <td>12</td>
+          <td>.99</td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <br>
 
-Gordo's historic flight took place on December 13, 1958 when he took off from Cape Canaveral for a 15 minute flight into space. Even though he was weightless for over 8 minutes the on-board instruments indicated that Gordo enjoyed his journey into space. Scientists monitoring the flight were pleased to note that the only slight side effect Gordo suffered from the entry into space was a modest slowing of his pulse.
+      <form method="post" action="processing-script.php">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="username">Name:</label><input type="text" id="username" name="username" />
+          <label for="address">Address</label><textarea id="address" name="address"></textarea>
+          <label for="color">Favorite Color</label>
+          <select id="color" name="color">
+            <option value="R">Red</option>
+            <option value="G">Green</option>
+            <option value="B">Blue</option>
+            <option value="null" selected>Select Color</option>
+          </select>
+          <input type="submit" value="Take me to your leader" />
+        </fieldset>
 
+      </form>
+      <br>
+      <br>
+      <br>
 
-The Mission
+      <p>Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. </p>
 
-The rocket carrying Gordo into space would take off from the Atlantic Missile Range at Cape Canaveral, travel further than any monkey had ever travelled before - over 1,500 miles - and reach a height of 310 miles (500 km) before returning to Earth and landing in the South Atlantic, 1,302 nautical miles south of Cape Canaveral.
+      <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="ualr logo" />
 
-"We all heard the rumors that they want to send a monkey up first. Well, none of us wants to think that they're gonna send a monkey up to do a man's work ... what they're trying to do to us is send a man up to do a monkey's work."
+      <h3>This is a Subsection of the Primary Content</h3>
+      <!--(Subsection I)-->
 
-Deke Slayton, Mercury Seven Astronaut
+      <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem.</p>
 
+      <p> Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis.</p>
 
-The Jupiter AM-13
+      <!--This is a list of instructions-->
+      <ol>
+        <li>Instruction</li>
+        <li>Instruction
+          <ul>
+            <li>Ramen</li>
+            <li>Cheetos</li>
+            <li>Jolt
+              <ul>
+                <li>Ramen</li>
+                <li>Cheetos</li>
+                <li>Jolt</li>
+                <li>Bread</li>
+              </ul>
+            </li>
+            <li>Bread</li>
+          </ul>
+        </li>
+        <li>Instruction</li>
+        <li>Instruction</li>
+      </ol>
 
-The Jupiter IRBM (Intermediate Range Ballistic Missile) was originally developed by the US Army as a long-range successor to its PGM-11 Redstone missile, but was eventually taken over and deployed by the USAF for political reasons. It was also the only one of the United States' early stategic ballistic missiles with some mobility.
+      <!--This is a list of items to purchase at the grocery store.-->
+      <ul>
+        <li>Ramen</li>
+        <li>Cheetos</li>
+        <li>Jolt</li>
+        <li>Bread</li>
+      </ul>
 
-Flight Date: December 13, 1958
-Launch Time: 03.53 EST
+      <!--This is an Example of how we should mark up a term and its description(s)-->
 
+      <dl>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dd>Description 2</dd>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dd>Description 2</dd>
+        <dd>Description 3</dd>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+      </dl>
 
-The Journey
+      <h4>This is a Subsection of Subsection I</h4>
 
-Gordo wore a specially customised space suit custom made for a monkey about one foot tall. The space suit was fitted with instruments, including temperature meters and microphones which recorded his historic suborbital journey, considered one of the outstanding achievements of space research.
+      <blockquote>Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</cite></blockquote>
 
-Flight Time: 15 Minutes
-Apogee: 310 Miles
+      <h3>This is a Subsection of the Primary Content</h3>
+      <!--(Subsection II)-->
 
-
-References
-
-Remembering 'Gordo'
-BBC - Monkey Lost After Space Flight
-Gordo and Laika - Space Pioneers
-
-
-The Famous Primates web site is a Web Standardistas production.
-XHTML + CSS released under a Creative Commons Attribution 3.0 license.
-Photography Copyright iStockphoto.
-  
+      <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <p> Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor, libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
+    </section>
+    <!--#content-->
+    <nav class="primary">
+      <!--This is the Navigation for the Page-->
+      <ul>
+        <li><a href="index.pdf" download title="Take me home country roads">Home</a></li><!-- Relative Link -->
+        <li><a href="https://ualr.edu">About</a></li><!-- Absolute Link -->
+        <li><a href="https://ualr.edu/#news" target="_blank">Services</a></li><!-- Anchor Link -->
+        <li><a href="mailto:youremail@domain.com" download>Contact</a></li><!-- Email Link-->
+      </ul>
+    </nav>
+    <!--#nav-->
+    <footer class="primary">
+      <h6>&copy; 2021 Thomas Wallace | <a href="#top">Back to Top</a></h6>
+    </footer>
+    <!--#footer-->
+  </div>
+  <!--#container-->
 </body>
+
 </html>
