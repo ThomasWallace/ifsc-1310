@@ -1,12 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Thomas Wallace</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Short keyword rich description of the site's purpose" />
+  <meta name="author" content="Thomas Wallace" />
 </head>
+
 <body>
-    <h1>Thomas Wallace - Project 1</h1>
+  <main>
+    <header class="primary">
+      <h1>Prototype HTML Document Example</h1>
+    </header>
+    <!--#header-->
+    <section id="content">
+      <h2>Properly Marking up an HTML Document</h2>
+
+      <form action="processing-script.php" method="post">
+        <fieldset>
+          <legend>Sample Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="address">Address</label>
+          <textarea id="address" name="address"></textarea>
+          <label for="color">Favorite Color:</label>
+          <select id="color" name="color">
+            <option value="R">Red</option>
+            <option value="G">Green</option>
+            <option value="B">Blue</option>
+            <option value="N" selected>---</option>
+          </select>
+          <input type="submit" value="Take me to your leader" />
+        </fieldset>
+      </form>
+
+      <!-- Remove Border Attribute once I learn CSS -->
+      <table border="1">
+        <caption>Snacks</caption>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Cost</th>
+        </tr>
+        <tr>
+          <td>Cheetos</td>
+          <td>6</td>
+          <td>1.99</td>
+        </tr>
+        <tr>
+          <td>Jolt</td>
+          <td>6</td>
+          <td>2.99</td>
+        </tr>
+        <tr>
+          <td>Ramen</td>
+          <td>12</td>
+          <td>.99</td>
+        </tr>
+      </table>
+
+      <p id="thomas">This is a paragraph. Often times designers will use <q>Dummy Text</q> as a placeholder in a document. <em>An example of that text follows</em>...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <strong>Praesent volutpat velit sed massa.</strong> In volutpat eros sagittis ipsum. <del>Donec fringilla risus nec nunc.</del> Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. <sup><a href="#footnote">1</a></sup></p>
+      <p> <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UALR Logo" />Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis,tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. </p>
+
+      <address>
+        Thomas Wallace<br />
+        123 Address<br />
+        Little Rock, Ar
+      </address>
+
+      <hr />
+
+      <h3>This is a Subsection of the Primary Content</h3>
+
+      <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem.</p>
+      <p> Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. </p>
+
+      <ol>
+        <li>Instruction</li>
+        <li>Instruction</li>
+        <li>Instruction
+          <ul>
+            <li>Ramen</li>
+            <li>Cheetos</li>
+            <li>Jolt
+              <ul>
+                <li>Ramen</li>
+                <li>Cheetos</li>
+                <li>Jolt</li>
+                <li>Bread</li>
+              </ul>
+            </li>
+            <li>Bread</li>
+          </ul>
+        </li>
+        <li>Instruction</li>
+        <li>Instruction</li>
+      </ol>
+
+      <ul>
+        <li>Ramen</li>
+        <li>Cheetos</li>
+        <li>Jolt</li>
+        <li>Bread</li>
+      </ul>
+
+      <dl>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dd>Description 2</dd>
+        <dd>Description 3</dd>
+        <dd>Description 4</dd>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dd>Description 2</dd>
+      </dl>
+
+      <h4>This is a Subsection of Subsection I</h4>
+
+      <blockquote>Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</cite></blockquote>
+
+      <h3>This is a Subsection of the Primary Content</h3>
+
+      <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat.</p>
+      <p> Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor, libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
+    </section>
+    <!--#content-->
+    <section id="blog">
+      <article class="post">
+        <header>Post Title</header>
+        <div class="post-content">
+          Post Content Here
+        </div>
+        <footer>Copyright</footer>
+      </article>
+      <article class="post">
+        <header>Post Title</header>
+        <div class="post-content">
+          Post Content Here
+        </div>
+        <footer>Copyright</footer>
+      </article>
+      <article class="post">
+        <header>Post Title</header>
+        <div class="post-content">
+          Post Content Here
+        </div>
+        <footer>Copyright</footer>
+      </article>
+    </section>
+    <!--#content-->
+    <nav>
+
+      <ul>
+        <li><a href="images/image.jpg" title="The title attricute provides a place to provide a detailed description of what is behind the link">Relative Link</a></li>
+        <li><a href="https://ualr.edu#news" target="_blank">Absolute Link</a></li>
+        <li><a href="mailto:email@address.com">Email Link</a></li>
+        <li><a href="#top">Anchor Link</a></li>
+      </ul>
+    </nav><!-- #nav-->
+    <footer class="primary">
+      <p id="footnote">Footnote</p>
+      <h6>
+        &copy; 2023 Thomas Wallace | <a href="#top">Back to Top</a>
+      </h6>
+    </footer>
+    <!--#footer-->
+  </main>
+  <!--#container-->
 </body>
+
 </html>
