@@ -1,17 +1,338 @@
 /* 
 Primary Color:#BF9B8E
-
-
-
-
 */
 
+/*  ---------------Box Sizing-----------------  */
 
-
-
-
-body{
-    background-color: lightblue;
-    font-family: 'Roboto', sans-serif;
-}
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  --------------- Utility Classes -----------------  */
+  
+  .container {
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+  }
+  
+  .img-right{
+    float:right;
+    border:1px solid #c0c0c0;
+    padding:2px;
+    margin:10px 0 10px 20px;
+  }
+  
+  .img-left{
+    float:left;
+    border:1px solid #c0c0c0;
+    padding:2px;
+    margin:10px 20px 10px 0;
+  }
+  
+  .img-center{
+    display:block;
+    border:1px solid #c0c0c0;
+    padding:2px;
+    margin:20px auto;
+  }
+  
+  /*  --------------- Responsive Images -----------------  */
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /*  --------------- Tables ------------------------  */
+  
+  table{
+    width:100%;
+    border:1px solid #c0c0c0;
+    border-collapse:collapse;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+    margin:20px 0;
+  }
+  table caption{
+    font-weight:bold;
+    margin:10px;
+  }
+  table tr:nth-child(even){
+    background-color:rgba(0,0,0,.1);
+  }
+  
+  table tr:hover{
+    background-color:rgba(0,0,0,.2);
+  }
+  
+  
+  
+  table th{
+    background-color: #172635;
+    color:#fff;
+    padding:10px;
+  }
+  table td{
+    border:1px solid #c0c0c0;
+    padding:5px;
+    text-align:right;
+    width:33%;
+  }
+  
+  td:nth-child(1){
+    text-align:left;
+  }
+  
+  /*  --------------- Lists ------------------------  */
+  
+  ol{
+    list-style-type:lower-roman;
+  }
+  
+  li{
+  
+  }
+  
+  ul li > ul {
+    list-style-type:square;
+    color:red;
+  }
+  
+  dl{}
+  dt{
+    font-weight:bold;
+  }
+  dd{
+    margin:0;
+  }
+  
+  dd + dt{
+    margin-top:20px;
+    color:red;
+  }
+  
+  
+  
+  /*  --------------- Global Styles -----------------  */
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-image:url("../img/kitten.jpg");
+  }
+  
+  header.primary {
+    background-color: #3b638b;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px;
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+    text-shadow: 1px 1px #000000;
+  }
+  
+  header.primary h1 {
+    font-size: 2.4rem;
+    margin: 20px 0 10px;
+  }
+  
+  header.primary h1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header.primary h2 {
+    font-size: 1.4rem;
+  }
+  
+  header.primary nav {
+    max-width: 960px;
+    margin: 20px auto;
+  }
+  
+  header.primary nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  header.primary nav ul li {
+    list-style-type: none;
+  }
+  
+  header.primary nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+  }
+  
+  header.primary nav ul li a:hover,
+  header.primary nav ul li a:active {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  #intro {
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom: 14px;
+  }
+  
+  #intro h2 {
+    color: #3b638b;
+    border-bottom: 1px dotted #c0c0c0;
+  }
+  
+  #content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom:2.6rem;
+  }
+  
+  #content article.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: 0.5s;
+  }
+  
+  #content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  article.post figure {
+    margin: 0;
+  }
+  
+  time.post-date,
+  figcaption,
+  .post-meta {
+    text-transform: uppercase;
+    color: #c0c0c0;
+  }
+  .post figure img {
+    border: 1px solid #c0c0c0;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  article.post a {
+    color: #3b638b;
+  }
+  
+  article.post a:hover {
+    text-decoration: none;
+  }
+  
+  #practice h2{
+  color: #3b638b;
+  border-bottom: 1px dotted #c0c0c0;
+  }
+  
+  #practice blockquote{
+    border:4px double #c0c0c0;
+    margin:40px 80px;
+    padding:20px 40px;
+    border-radius: 30px 0;
+    background-color:#3b638b;
+    color:#c0c0c0;
+    line-height:1.8;
+    text-shadow:1px 1px #000;
+  }
+  
+  #practice blockquote cite{
+    display:block;
+    font-size:.7rem;
+    font-weight:bold;
+    text-align:right;
+    margin-top:10px;
+  }
+  
+  
+  
+  aside[role="complementary"] {
+    background-color: #172635;
+    color: #ffffff;
+    padding: 1.9rem;
+  }
+  
+  /* Attribute Selector Example
+  a[target="_blank"]{
+    color:red;
+  }
+  
+  */
+  
+  aside .container {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+  }
+  
+  aside .widget a:last-of-type {
+    display: block;
+    text-align: right;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  aside .widget footer {
+    display: none;
+  }
+  
+  #colophon {
+    background-color: #3b638b;
+  }
+  
+  #colophon h6 {
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  /*  --------------- Media Queries -----------------  */
+  
+  @media screen and (max-width: 600px) {
+    header.primary nav ul {
+      flex-direction: column;
+      max-width: 250px;
+      margin: auto;
+    }
+    header.primary nav a {
+      display: block;
+    }
+    header.primary nav li {
+      margin-bottom: 10px;
+    }
+  }
+  
+  
+  
+  
+  #content article.post:hover,
+  #content article.post:active{
+      transition:0.5s;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      font-size:medium;
+  }

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <title>IFSC 1310 - Prototype</title>
   <meta charset="UTF-8">
@@ -11,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
   <header role="banner" class="primary">
     <h1><a href="index.html">Building the Modern Web</a></h1>
@@ -31,7 +29,6 @@
       pulvinar. Aliquam condimentum sapien lorem, in egestas ipsum rhoncus sed. Vivamus congue et eros in cursus. Donec elementum quam sit amet feugiat volutpat. Vestibulum varius laoreet turpis id efficitur. Proin scelerisque volutpat lectus, at fermentum
       dui euismod sed. In efficitur felis risus, at tempor risus aliquam vel.</p>
   </section>
-
   <section id="content" class="container">
     <article class="post">
       <header>
@@ -43,7 +40,7 @@
         <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
       </header>
       <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-        </p>
+      </p>
       <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
     </article>
     <article class="post">
@@ -56,12 +53,12 @@
         <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
       </header>
       <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-        </p>
+      </p>
       <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
     </article>
     <article class="post">
       <header>
-       <time class="post-date" datetime="2023-02-20">February 20, 2023</time>
+        <time class="post-date" datetime="2023-02-20">February 20, 2023</time>
         <figure>
           <img src="https://via.placeholder.com/300x200" alt="Placeholder">
           <figcaption>Image Caption</figcaption>
@@ -72,13 +69,127 @@
       <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
     </article>
   </section>
+  <section id="practice" class="container">
+  <h2>Properly Marking up an HTML Document</h2>
+  <!--(Primary Content Heading)-->
+
+  <p>This is a paragraph. <em>Often times designers</em> will use <q>Dummy Text</q> as a <strong>placeholder</strong> in a document. An example of that text <img src="assets/img/kitten.jpg" class="img-center" alt="UA Little Rock Logo" />follows...Lorem ipsum dolor sit amet, consectetuer <del>adipiscing elit</del>. Praesent volutpat
+    velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem.</p>
+
+  <p> <a href="#">Quisque feugiat arcu eget sapien</a>. <span class="foo">Aenean</span> eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet.</p>
+  <p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis,
+    tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. <sup><a href="#">1</a></sup> </p>
+
+  <h3>This is a Subsection of the Primary Content</h3>
+  <!-- (Subsection I)-->
+
+  <table>
+    <caption>Grocery List</caption>
+    <thead>
+      <!--Design Time Attribute - Remove before Prodution-->
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Cost</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>Jolt Extra</td>
+      <td>3</td>
+      <td>.99</td>
+    </tr>
+    <tr>
+      <td>Jolt</td>
+      <td>3</td>
+      <td>.99</td>
+    </tr>
+    <tr>
+      <td>Jolt</td>
+      <td>3</td>
+      <td>.99</td>
+    </tr>
+    <tr>
+      <td>Jolt</td>
+      <td>3</td>
+      <td>.99</td>
+    </tr>
+    <tr>
+      <td>Jolt</td>
+      <td>3</td>
+      <td>.99</td>
+    </tr>
+    <tr>
+      <td>Jolt</td>
+      <td>3</td>
+      <td>.99</td>
+    </tr>
+  </table>
+
+  <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis
+    ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin,
+    sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis.</p>
+
+  <!--This is a list of instructions.-->
+
+  <ol>
+    <li>Instruction</li>
+    <li>Instruction</li>
+    <li>Instruction</li>
+    <li>Instruction</li>
+    <li>Instruction</li>
+    <li>Instruction</li>
+  </ol>
+
+  <!--This is a list of items to purchase at the grocery store.-->
+
+  <ul>
+    <li>Ramen</li>
+    <li>Cheetos
+      <ul>
+        <li>Ramen</li>
+        <li>Cheetos</li>
+        <li>Jolt</li>
+        <li>Bread</li>
+      </ul>
+    </li>
+    <li>Jolt</li>
+    <li>Bread</li>
+  </ul>
+
+  <!--This is an Example of how we should mark up a term and its description(s)-->
+  <dl>
+    <dt>Term</dt>
+    <dd>Description 1</dd>
+    <dd>Description 2</dd>
+    <dt>Term</dt>
+    <dd>Description 1</dd>
+    <dd>Description 2</dd>
+    <dd>Description 3</dd>
+    <dd>Description 4</dd>
+    <dt>Term</dt>
+    <dd>Description 1</dd>
+  </dl>
+
+  <h4>This is a Subsection of Subsection I</h4>
+
+  <blockquote>This is a Quote. Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</cite></blockquote>
+
+  <h3>This is a Subsection of the Primary Content</h3>
+  <!--(Subsection II)-->
+
+  <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque
+    feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat
+    enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor,
+    libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
+</section>
   <aside role="complementary">
     <div class="container">
       <article class="widget">
         <header>
           <h2>Sample Sidebar Item </h2>
         </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
+        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, <a href="#">Read More &raquo;</a>cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
           Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
         <footer>Widget Footer</footer>
       </article>
@@ -87,14 +198,13 @@
           <h2>Sample Sidebar Item </h2>
         </header>
         <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
+          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#" target="_blank">Read More &raquo;</a></p>
         <footer>Widget Footer</footer>
       </article>
     </div>
   </aside>
   <!--#secondary -->
   <!--#content -->
-
   <footer id="colophon" role="contentinfo">
     <h6>&copy; 2023 Your Name</h6>
   </footer>
