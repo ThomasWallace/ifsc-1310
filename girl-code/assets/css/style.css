@@ -1,0 +1,146 @@
+/*Reset Box Model*/
+* {
+    box-sizing: border-box;
+  }
+  /*Responsive Images*/
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Utility Classes */
+  .container{
+    margin:20px auto;
+    max-width:960px;
+  }
+  
+  
+  body{
+    font-family: 'Lunasima', sans-serif;
+    margin:0;
+  }
+  
+  header.primary {
+  background-color:#3b638b;
+  color:#ffffff;
+  text-shadow:2px 2px #000000;
+  padding:40px 20px 40px 20px;
+  text-align:center;
+  }
+  
+  header.primary h1{
+    font-size: 2.5rem;
+    margin:20px 0 0;
+  }
+  
+  header.primary h2{
+    font-size: 1.5rem;
+    margin-bottom:30px;
+  }
+  
+  #main-nav{
+    margin: 20px auto;
+  }
+  
+  #main-nav ul{
+    display:flex;
+    justify-content:space-around;
+    padding:0;
+  }
+  
+  #main-nav ul li{
+    list-style-type:none;
+  }
+  
+  #main-nav ul li a{ 
+    color:white;
+    text-decoration:none;
+    background-color:rgba(0,0,0,.5);
+    padding:8px 16px;
+    font-size:.8rem;
+    border-radius:20px;
+    transition:.3s;
+  }
+  
+  #main-nav ul li a:hover{
+      background-color:rgba(0,0,0,.8);
+  }
+  
+  
+  #content h2{
+    color: #3b638b;
+    border-bottom:1px dotted #c0c0c0;
+  }
+  
+  #content p{
+    line-height:1.2;
+    letter-spacing:-1px;
+  }
+  
+  #articles{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+  
+  article.post{
+    width:30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    padding:10px;
+    transition:.5s;
+  }
+  
+  article.post:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  }
+  
+  time.post-date, article figcaption{
+    text-transform:uppercase;
+    font-size:0.8rem;
+    color:grey;
+    display:block;
+  }
+  
+  article figure{
+    margin:10px 0;
+  }
+  
+  article.post a{
+    color:#3b638b;;
+  }
+  
+  aside{
+    background-color:#172635;
+    color:#ffffff;
+    padding:40px;
+  }
+  
+  aside .container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:100px;
+  }
+  
+  aside a{
+    color:#fff;
+  }
+  
+  aside footer{
+    display:none;
+  }
+  
+  aside a:last-of-type{
+    display:block;
+    text-align:right;
+  }
+  
+  #colophon{
+    background:#3b638b;
+    padding:10px;
+  }
+  
+  #colophon h6{
+    color:white;
+    text-align:center;
+  }
