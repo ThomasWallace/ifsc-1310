@@ -1,8 +1,19 @@
 /*  CSS Demo Stylesheet  */
 
 body {
-background-color:dodgerblue;
-}
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  main{
+  }
+  
+  header.primary{
+  background-color:#3b638b;
+  color:#ffffff;  
+  }
 
 
 
