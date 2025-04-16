@@ -73,7 +73,7 @@ html {
   
   header.primary::before {
     content: "";
-    background-image: url("https://assets.codepen.io/7248/mars.jpg");
+    background-image: url("../img/mars.jpg");
     background-size: cover;
     position: absolute;
     top: 0px;
